@@ -8,9 +8,6 @@ on:
 #    paths:
 #      - backend/**
 
-permissions:
-  contents: read
-
 jobs:
 
   my-own:
