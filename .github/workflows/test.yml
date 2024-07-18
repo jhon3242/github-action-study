@@ -1,0 +1,30 @@
+name: BE CD for Dev
+
+on:
+  workflow_dispatch:
+
+  push:
+    branches: [ "develop" ]
+#    paths:
+#      - backend/**
+
+permissions:
+  contents: read
+
+jobs:
+
+  my-own:
+    runs-on: ubuntu-latest
+    steps:
+      - name: I'm 예민
+        run: echo hello world!
+
+
+
+
+
+#  deploy:
+#    runs-on: [self-hosted, linux, ARM64]
+#    steps:
+#      - name: Deploy to EC2
+#        run: sudo sh ~/deploy-script-dev.sh
